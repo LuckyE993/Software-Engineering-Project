@@ -1,0 +1,22 @@
+@import './custom.scss';
+@import './color.scss';
+@import './flex.scss';
+@import './theme.scss';
+@import './margin-padding.scss';
+@import './other.scss';
+
+//原子化css
+* {
+  // 清除默认的外边距和内边距
+  margin: 0;
+  padding: 0;
+  // 盒子模型：外边距（margin）+ border（边框） + 内边距（padding）+ content（内容）
+  box-sizing: border-box; // 设置之后padding和border的值就不会影响盒子大小(元素的宽高)，相当于把padding和border的值都算在content里
+}
+
+#app,
+html,
+body {
+  height: 100%; // 页面满屏
+  // overflow: hidden;
+}
